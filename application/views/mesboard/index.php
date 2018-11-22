@@ -27,7 +27,7 @@
 		               <p class="tu">  標題: <input type="text" name="mes[title]" id="showLeft"/></p> 
 		            	 <p class="tu">名子: <input type="text" name="mes[name]"/></p>
 		            	 <p class="tu">留言內容:</p>
-		                 <p><textarea name="mes[message]" rows="4" cols="40" placeholder="輸入您的留言..."></textarea></p>
+		                 <p><textarea name="mes[message]" rows="4" cols="43" placeholder="輸入您的留言..."></textarea></p>
 		            	 <input type="submit" value="送出" style="float:right;">
 		            </form>
 
