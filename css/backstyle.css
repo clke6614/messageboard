@@ -1,0 +1,72 @@
+.border { 
+width: 368px; 
+padding: 20px; 
+border: 1px dotted lavender; 
+padding-bottom:35px;
+margin: 0px 30px;
+margin-top: -50px;
+box-shadow: rgb(214, 214, 214) 1px 1px 1px; 
+background-color: #F5F5F5;
+}
+.border2 { 
+width: 368px; 
+padding: 20px; 
+border: 1px dotted lavender; 
+padding-bottom:35px;
+margin: 10px 30px;
+box-shadow: rgb(214, 214, 214) 1px 1px 1px; 
+background-color: rgb(250, 250, 250);
+}
+.bottom {
+	text-align: right;
+border-bottom-style:solid;
+}
+.center{
+margin:0px 38%;
+}
+.center2{
+margin: 0px 290px;
+width:100%;
+height:100%;
+}
+.back {
+background-position:center;
+background-attachment: fixed; /*當頁面的其餘部分滾動時，背景圖像不會移動。*/
+background-image:url(/messageboard/pic/max.jpg); /*裡面也可以放圖片網址*/
+background-repeat: repeat-y; 
+}
+.tu {
+	font-family: arial,sans-serif;
+    font-size: 13px;
+    color: #696969;
+}
+a:before {
+    display: block;
+    height: inherit;
+    left: 0;
+    line-height: inherit;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    top: 0;
+    width: inherit;
+}
+.sidebar_left{
+　background-color:#FFECC9;
+　width:120px;
+　height:400px;
+　text-align:center;
+　line-height:400px;
+　float:left;
+}
+.update {
+	float:right;
+padding: 3px 12px;
+	font-size: 13px;
+	line-height: 19px;
+	background: rgb(153, 153, 153);
+	background: #666;
+	color: white;
+	text-decoration: none;
+	margin: 0 3px 0 0;
+}
