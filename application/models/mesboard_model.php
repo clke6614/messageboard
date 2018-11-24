@@ -37,5 +37,10 @@ class mesboard_model extends CI_Model
 		$this->db->where('id', $id);
 		$this->db->update($this->tbl, $msg);
 	}
+	public function limitfind($id)
+	{
+		$query = $this->db->get($this->tbl, 3, ($id-1)*3);
+		return $query->result_array(); 
+	}	
 }
 ?>

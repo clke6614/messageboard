@@ -44,7 +44,17 @@
 				            <a class="update" href="/messageboard/mesboard/delete/<?php echo $mes['id'] ?>">delete</a>
 				            <a class="update" href="/messageboard/mesboard/edit/<?php echo $mes['id'] ?>">Edit</a>   
 			            </div>   
-			        <?php endforeach ?>         
+			        <?php endforeach ?>  
+                <a class="update" href="/messageboard/mesboard/turnpage/<?php echo $page_count+3 ?>">next</a>    
+                <?php
+                for($i=2; $i>=0; $i--)
+                {
+                  $count=$page_count+$i;
+                ?>
+                <a class="update" href="/messageboard/mesboard/page_count/<?php echo $count; ?>"><?php echo $page_count+$i; ?></a> 
+          <?php } ?>
+                
+                <a class="update" href="/messageboard/mesboard/turnpage/<?php echo $page_count-3 ?>">up</a>          
 	      </div>
       </div>
     </body>

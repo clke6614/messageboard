@@ -7,8 +7,26 @@ class mesboard extends CI_Controller
 	public function index()
 	{
 		$this->load->model('mesboard_model','mes');
-		$data['mes'] = $this->mes->findall();
+		$id = $data['page_count']=1;
+		$data['mes'] = $this->mes->limitfind($id);
 		$this->load->view('mesboard/index',$data);
+		$this->load->view('mesboard/menu');
+	}
+	public function turnpage($id)
+	{
+		$this->load->model('mesboard_model','mes');
+		$data['mes'] = $this->mes->limitfind($id);
+		$data['page_count'] =  $id;
+		$this->load->view('mesboard/index',$data);
+		$this->load->view('mesboard/menu');
+	}
+		public function page_count($id)
+	{
+		$this->load->model('mesboard_model', 'mes');
+		$data['mes'] = $this->mes->limitfind($id);
+		$pag = intval(($id-1)/3)+1;
+		$data['page_count'] = $pag*3-2;
+		$this->load->view('mesboard/index', $data);
 		$this->load->view('mesboard/menu');
 	}
 	public function creat()
